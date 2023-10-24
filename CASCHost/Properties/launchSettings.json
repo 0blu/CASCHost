@@ -16,7 +16,7 @@
     },
     "CASCHost": {
       "commandName": "Project",
-      "commandLineArgs": "wow_classic",
+      "commandLineArgs": "wow_classic_era",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

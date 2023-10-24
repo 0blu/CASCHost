@@ -191,6 +191,7 @@ namespace CASCHost
 
 		private bool PingPatchUrl()
 		{
+			return true; // # yolo - We need to extract all the patch info from CASCExtractor. Official Servers do not serve this anymore :(
 			try
 			{
 				using (var clientHandler = new HttpClientHandler() { AllowAutoRedirect = false })

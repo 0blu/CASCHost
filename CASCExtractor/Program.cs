@@ -21,7 +21,7 @@ namespace CASCExtractor
                 BasePath = basePath,
                 BuildInfoPath = basePath,
                 Basic = true,
-                Product = "wow_classic", // Product = "wow_classic_era",
+                Product = "wow_classic_era", //Product = "wow_classic",
             };
             CASContainer.Open(settings);
 
