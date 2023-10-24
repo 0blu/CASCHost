@@ -35,7 +35,8 @@ namespace CASCHost
 			if (GetByteRange(out RangeItemHeaderValue range))
 				Startup.Logger.LogConsole($"Partial Content (206) {Path.GetFileName(subpath)}, Content-Range: {range.From} - {range.To}");
 
-			return new PhysicalFileInfo(new FileInfo(fullPath));
+			var phyFile = new FileInfo(fullPath);
+			return new PhysicalFileInfo(phyFile);
 		}
 
 

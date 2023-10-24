@@ -16,11 +16,11 @@
     },
     "CASCHost": {
       "commandName": "Project",
-      "commandLineArgs": "wow",
+      "commandLineArgs": "wow_classic",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://127.0.0.1"
+      "applicationUrl": "http://127.0.0.1:5100"
     }
   }
 }

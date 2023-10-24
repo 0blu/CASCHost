@@ -26,6 +26,8 @@ namespace CASCEdit
                     break;
                 case ".build.info":
                     return filename;
+                case "listfile.csv":
+                    return filename;
                 default:
                     path =  basepath + type + Path.DirectorySeparatorChar + filename[0] + filename[1] + Path.DirectorySeparatorChar + filename[2] + filename[3] + Path.DirectorySeparatorChar + filename;
                     break;

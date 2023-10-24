@@ -1,16 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Platforms>AnyCPU;x64</Platforms>
     <ApplicationIcon />
     <OutputType>Exe</OutputType>
     <StartupObject />
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <DebugType>none</DebugType>
-    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,16 +23,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Win32.Registry" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.6.0" />
     <PackageReference Include="MySqlConnector" Version="0.42.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.113.5" />
   </ItemGroup>
   
   <ItemGroup>
-    <Content Update="appsettings.wow.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Update="hosting.wow.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -14,6 +14,7 @@ using CASCEdit.IO;
 using System.Security.Cryptography;
 using CASCEdit;
 using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Threading.Tasks.Dataflow;
 
 namespace CASCEdit

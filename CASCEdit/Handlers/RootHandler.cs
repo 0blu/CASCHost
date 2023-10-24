@@ -50,7 +50,7 @@ namespace CASCEdit.Handlers
             if (!(File.Exists(cdnPath)) && onlineListfile)
             {
                 CASContainer.Logger.LogInformation("Downloading listfile from WoW.Tools");
-                ListFileClient.DownloadFile("https://wow.tools/casc/listfile/download/csv/unverified", cdnPath);
+                ListFileClient.DownloadFile("https://raw.githubusercontent.com/wowdev/wow-listfile/master/community-listfile.csv", cdnPath);
             }
 
             BinaryReader stream = new BinaryReader(data);
@@ -83,7 +83,8 @@ namespace CASCEdit.Handlers
 
 					//Console.WriteLine("Chunk: {0} {1} (size {2})", chunk.ContentFlags, chunk.LocaleFlags, chunk.Count);
 
-				if (chunk.LocaleFlags == LocaleFlags.All_WoW && chunk.ContentFlags == ContentFlags.F00080000)
+				// For 1.14: if (chunk.LocaleFlags == LocaleFlags.All_WoW_Classic && chunk.ContentFlags == ContentFlags.F00080000)
+				if (chunk.LocaleFlags == LocaleFlags.All_WoW_Classic && chunk.ContentFlags == ContentFlags.Alternate)
 					GlobalRoot = chunk;
 
 				// set the global root if not already set
